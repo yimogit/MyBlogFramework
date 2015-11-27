@@ -1,0 +1,175 @@
+﻿
+<link href="/ThirdParty/HPlus/plugins/datapicker/datepicker3.css" rel="stylesheet">
+<link href="/ThirdParty/HPlus/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+<link href="/ThirdParty/HPlus/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+<div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>所有表单元素 <small>包括自定义样式的复选和单选按钮</small></h5>
+
+                </div>
+                <div class="ibox-content">
+                    <form method="get" class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">文本框</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" placeholder="提示信息">
+                                <span class="help-block m-b-none">帮助文本，可能会超过一行，以块级元素显示</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">静态控制</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">i@zi-han.net</p>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Select</label>
+                            <div class="col-sm-10">
+                                <select class="form-control m-b" name="account">
+                                    <option>选项 1</option>
+                                    <option>选项 2</option>
+                                    <option>选项 3</option>
+                                    <option>选项 4</option>
+                                </select>
+                                <div class="col-sm-4 m-l-n">
+                                    <select class="form-control" multiple="">
+                                        <option>选项 1</option>
+                                        <option>选项 2</option>
+                                        <option>选项 3</option>
+                                        <option>选项 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group has-success">
+                            <label class="col-sm-2 control-label">验证通过</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group has-warning">
+                            <label class="col-sm-2 control-label">未填写</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group has-error">
+                            <label class="col-sm-2 control-label">验证未通过</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">自定义尺寸</label>
+                            <div class="col-sm-10">
+                                <input type="text" placeholder=".input-lg" class="form-control input-lg m-b">
+                                <input type="text" placeholder="Default input" class="form-control m-b">
+                                <input type="text" placeholder=".input-sm" class="form-control input-sm">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">列尺寸</label>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <input type="text" placeholder=".col-md-2" class="form-control">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input type="text" placeholder=".col-md-3" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" placeholder=".col-md-4" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group" id="data_1">
+                            <label class="col-sm-2 control-label">日期选择</label>
+                            <div class="input-group date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="text" class="form-control" value="2014-11-11">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">时间选择</label>
+                            <div class="input-group clockpicker" data-autoclose="true">
+                                <input type="text" class="form-control" value="09:30">
+                                <span class="input-group-addon">
+                                    <span class="fa fa-clock-o"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">复选框</label>
+                            <div class="checkbox checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label for="inlineCheckbox1"> 选项01 </label>
+                            </div>
+                            <div class="checkbox checkbox-inline">
+                                <input type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label for="inlineCheckbox2"> 选项02 </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">单选框</label>
+                            <div class="radio radio-info radio-inline">
+                                <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked="">
+                                <label for="inlineRadio1"> 选项 01 </label>
+                            </div>
+                            <div class="radio radio-info radio-inline">
+                                <input type="radio" id="inlineRadio2" value="option2" name="radioInline" checked="">
+                                <label for="inlineRadio2"> 选项 02 </label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-primary" type="submit">保存内容</button>
+                                <button class="btn btn-white" type="submit">取消</button>
+                                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">弹窗</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--弹窗-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">弹窗标题</h4>
+            </div>
+            <div class="modal-body">
+                <p>这是一个弹窗</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Data picker -->
+<script src="/ThirdParty/HPlus/plugins/datapicker/bootstrap-datepicker.js"></script><!-- Clock picker -->
+<script src="/ThirdParty/HPlus/plugins/clockpicker/clockpicker.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#data_1 .input-group.date").datepicker({ todayBtn: "linked", keyboardNavigation: false, forceParse: false, calendarWeeks: true, autoclose: true });//初始化日期控件
+        $(".clockpicker").clockpicker();//初始化时间控件
+    });
+</script>

@@ -1,0 +1,160 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html ng-app="ymApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>个人博客系统_后台管理</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--[if lt IE 8]>
+    <script>
+        alert('系统不支持IE6-8，请使用谷歌、火狐等浏览器\n或360、QQ等国产浏览器的极速模式浏览本页面！');
+    </script>
+    <![endif]-->
+    <link href="/ThirdParty/HPlus/css/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="/ThirdParty/HPlus/css/font-awesome.min.css?v=4.3.0" rel="stylesheet">
+    <link href="/ThirdParty/HPlus/css/animate.min.css" rel="stylesheet">
+    <link href="/ThirdParty/HPlus/css/style.min.css?v=3.2.0" rel="stylesheet">
+    <link href="/ThirdParty/HPlus/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+</head>
+<body class="fixed-sidebar full-height-layout gray-bg">
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close">
+                <i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <span><img alt="image" class="img-circle" src="/ThirdParty/HPlus/img/profile_small.jpg" /></span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                                <span class="clear">
+                                    <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
+                                    <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                    <a class="J_menuItem" href="javascript:;">修改头像</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem" href="javascript:;">个人资料</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem" href="javascript:;">联系我们</a>
+                                </li>
+                                <li>
+                                    <a class="J_menuItem" href="javascript:;">信箱</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="javascript:;">安全退出</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            H+
+                        </div>
+                    </li>
+                    <li>
+                        <a class="J_menuItem" href="#/"><i class="fa fa-home"></i> <span class="nav-label">主页</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">
+                            <i class="fa fa-columns"></i>
+                            <span class="nav-label">组件</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a class="J_menuItem" href="#/ArtList/">表格</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="#/ArtList2/">webuploader上传</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="#/ArtList3/">弹窗提示组件</a>
+                            </li>
+                            <li>
+                                <a class="J_menuItem" href="#/ArtList4/">表单元素</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="javascript:;"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" method="post" action="javascript:;">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="请输入您需要查找的内容...">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-primary">
+                                        搜索
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li class="hidden-xs">
+                            <a ym-alert alert-type="info" alert-title="程序猿已罢工" alert-text="" class="J_menuItem"><i class="fa fa-sign-out"></i> 退出</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row content-tabs">
+                <button class="roll-nav roll-left J_tabLeft">
+                    <i class="fa fa-home"></i>
+                </button>
+                <nav class="page-tabs J_menuTabs">
+                    <div class="page-tabs-content">
+                        <a href="#/" class="active J_menuTab">首页</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="row J_mainContent" id="content-main">
+                <!--内容开始-->
+                <div class="col-xs-12" ng-view style="height:100%;overflow-y:scroll;overflow-x:hidden;">
+
+                </div>
+                <!--内容结束-->
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    &copy; <a href="#" target="_blank">yimo's blog</a>
+                </div>
+            </div>
+        </div>
+        <!--右侧部分结束-->
+        <!--mini聊天窗口开始-->
+        <!--mini聊天窗口结束-->
+    </div>
+    <!-- 全局js -->
+    <script src="/ThirdParty/HPlus/js/jquery-2.1.1.min.js"></script>
+    <script src="/ThirdParty/HPlus/js/bootstrap.min.js?v=3.4.0"></script>
+
+    <script src="/ThirdParty/HPlus/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="/ThirdParty/HPlus/plugins/layer/layer.min.js"></script>
+    <script src="/ThirdParty/HPlus/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/ThirdParty/HPlus/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/ThirdParty/HPlus/js/hplus.min.js?v=3.2.0"></script>
+    <!-- 自定义js -->
+    <script src="/Script/angular.min.js?v=1.4"></script>
+    <script src="/Script/angular-route.min.js?v=1.4"></script>
+    <script src="/App/Admin/app.js?v=1.0"></script>
+</body>
+</html>

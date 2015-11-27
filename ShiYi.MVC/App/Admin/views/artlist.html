@@ -1,0 +1,67 @@
+﻿    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>自定义响应式表格</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-2 m-b-xs">
+                                <select class="input-sm form-control input-s-sm inline">
+                                    <option value="0">请选择</option>
+                                    <option value="1">选项1</option>
+                                    <option value="2">选项2</option>
+                                    <option value="3">选项3</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <input type="text" placeholder="请输入关键词" class="input-sm form-control" ng-model="c"> 
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary" ng-click="loading()"> 搜索</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>产品</th>
+                                        <th>名字</th>
+                                        <th>电话</th>
+                                        <th>公司</th>
+                                        <th>参数</th>
+                                        <th>采购数量</th>
+                                        <th>日期</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody ng-init="b=['a','b','c','d','e','f','g','h','i','j']">
+                                    <tr ng-repeat="a in b | filter:c">
+                                        <td><bdi>{{$index+1}}、</bdi>2015韩国童装韩版牛仔童短裤{{a}}</td>
+                                        <td>袁岳</td>
+                                        <td>0800 051213</td>
+                                        <td>深圳市有大福实业有限公司</td>
+                                        <td><span class="pie">0.52/1.561</span></td>
+                                        <td>200</td>
+                                        <td>2015.09.10</td>
+                                        <td>
+                                            <ym-delete del-url="/api/list/del/{{$index+1}}"><i class="fa fa-remove text-navy"></i>删除</ym-delete>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+

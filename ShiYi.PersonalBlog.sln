@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9881A54D-2469-4E43-99D7-B0157C4DA51B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiYi.Utility", "ShiYi.Utility\ShiYi.Utility.csproj", "{C6C9F37C-3E07-4759-A6E4-BFA2B30A6BD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E0A64422-B4C1-4068-92AF-710B4F0C8D81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiYi.MVC", "ShiYi.MVC\ShiYi.MVC.csproj", "{3F8F519B-0763-40C9-80C5-C2B82E353E0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{8470B76D-6CA3-4F38-9847-04682CD80778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{1F2C8B02-8F74-4E52-B990-31397F6D4BDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Tests", "DAL.Tests\DAL.Tests.csproj", "{EF9EF908-2B85-4C3F-AB2F-C09EBAB9952A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{241FFE0C-C35E-4744-B024-B47A9B1773F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAuthorization", "MvcAuthorization\MvcAuthorization.csproj", "{513DCC1E-3220-4AB1-94DC-1BED934AE0BF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ycq729.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ShiYi.Utility\\ShiYi.Utility.csproj
+		SccProjectName1 = ShiYi.Utility
+		SccLocalPath1 = ShiYi.Utility
+		SccProjectUniqueName2 = DAL\\DAL.csproj
+		SccProjectName2 = DAL
+		SccLocalPath2 = DAL
+		SccProjectUniqueName3 = ShiYi.MVC\\ShiYi.MVC.csproj
+		SccProjectName3 = ShiYi.MVC
+		SccLocalPath3 = ShiYi.MVC
+		SccProjectUniqueName4 = Model\\Model.csproj
+		SccProjectName4 = Model
+		SccLocalPath4 = Model
+		SccProjectUniqueName5 = Service\\Service.csproj
+		SccProjectName5 = Service
+		SccLocalPath5 = Service
+		SccProjectUniqueName6 = DAL.Tests\\DAL.Tests.csproj
+		SccProjectName6 = DAL.Tests
+		SccLocalPath6 = DAL.Tests
+		SccProjectUniqueName7 = Common\\Common.csproj
+		SccProjectName7 = Common
+		SccLocalPath7 = Common
+		SccProjectUniqueName8 = MvcAuthorization\\MvcAuthorization.csproj
+		SccProjectName8 = MvcAuthorization
+		SccLocalPath8 = MvcAuthorization
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6C9F37C-3E07-4759-A6E4-BFA2B30A6BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C9F37C-3E07-4759-A6E4-BFA2B30A6BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C9F37C-3E07-4759-A6E4-BFA2B30A6BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C9F37C-3E07-4759-A6E4-BFA2B30A6BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A64422-B4C1-4068-92AF-710B4F0C8D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A64422-B4C1-4068-92AF-710B4F0C8D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A64422-B4C1-4068-92AF-710B4F0C8D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A64422-B4C1-4068-92AF-710B4F0C8D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8F519B-0763-40C9-80C5-C2B82E353E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8F519B-0763-40C9-80C5-C2B82E353E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8F519B-0763-40C9-80C5-C2B82E353E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8F519B-0763-40C9-80C5-C2B82E353E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8470B76D-6CA3-4F38-9847-04682CD80778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8470B76D-6CA3-4F38-9847-04682CD80778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8470B76D-6CA3-4F38-9847-04682CD80778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8470B76D-6CA3-4F38-9847-04682CD80778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F2C8B02-8F74-4E52-B990-31397F6D4BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F2C8B02-8F74-4E52-B990-31397F6D4BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F2C8B02-8F74-4E52-B990-31397F6D4BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F2C8B02-8F74-4E52-B990-31397F6D4BDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF9EF908-2B85-4C3F-AB2F-C09EBAB9952A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9EF908-2B85-4C3F-AB2F-C09EBAB9952A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9EF908-2B85-4C3F-AB2F-C09EBAB9952A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9EF908-2B85-4C3F-AB2F-C09EBAB9952A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241FFE0C-C35E-4744-B024-B47A9B1773F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{241FFE0C-C35E-4744-B024-B47A9B1773F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{241FFE0C-C35E-4744-B024-B47A9B1773F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{241FFE0C-C35E-4744-B024-B47A9B1773F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513DCC1E-3220-4AB1-94DC-1BED934AE0BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513DCC1E-3220-4AB1-94DC-1BED934AE0BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513DCC1E-3220-4AB1-94DC-1BED934AE0BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513DCC1E-3220-4AB1-94DC-1BED934AE0BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
